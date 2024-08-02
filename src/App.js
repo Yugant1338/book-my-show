@@ -5,9 +5,9 @@ import {Routes, Route} from 'react-router-dom';
 function App() {
   return (
       <Routes>
-          <Route path="/" elememt = {<HomePage/>}/>
-          <Route path = '/movies:id' element={<MoviePage />}/>
-          <Route path = '/plays' element={<Plays />}/>
+          {/*<Route path="/" elememt = {<HomePage/>}/>*/}
+          {/*<Route path = '/movies:id' element={<MoviePage />}/>*/}
+          {/*<Route path = '/plays' element={<Plays />}/>*/}
       </Routes>
   );
 }
