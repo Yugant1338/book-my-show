@@ -1,21 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Poster = ({ isPlay, src, title, subtitle }) => {
+const PlayFilters = ({ title, tags }) => {
     return (
-        <div className="poster">
-            <img src={src} alt={title} className="w-full h-full" />
-            <h3 className="text-lg font-bold">{title}</h3>
-            <p className="text-sm">{subtitle}</p>
+        <div className="play-filters mb-4">
+            <h3 className="text-lg font-bold mb-2">{title}</h3>
+            <div className="flex flex-wrap gap-2">
+                {tags.map((tag, index) => (
+                    <div key={index} className="border border-gray-400 p-2 rounded">
+                        {tag}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
 
-Poster.propTypes = {
-    isPlay: PropTypes.bool,
-    src: PropTypes.string,
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
+PlayFilters.propTypes = {
+    title: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Poster;
+export default PlayFilters;

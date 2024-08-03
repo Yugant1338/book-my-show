@@ -7,9 +7,6 @@ const MovieHero = () =>{
 
     const {movie} = useContext(MovieContext);
     const genres = movie.genres?.map(({name})=>name).join(", ");
-    // console.log(genres);
-
-
 
     return <>
         <div>
