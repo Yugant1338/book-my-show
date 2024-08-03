@@ -63,7 +63,7 @@ const PaymentModel = ({ setIsOpen, isOpen, price }) => {
                                     </Dialog.Title>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">
-                                            Hello please click non the below button to make a payment.
+                                            Click on the below button to continue with payment.
                                         </p>
                                     </div>
 
@@ -80,7 +80,7 @@ const PaymentModel = ({ setIsOpen, isOpen, price }) => {
                                             className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                             onClick={closeModal}
                                         >
-                                            Cancle Payment
+                                            Cancel Payment
                                         </button>
                                     </div>
                                 </Dialog.Panel>
