@@ -44,29 +44,30 @@ const HeroCarousel =() =>{
     );
 
     const settingsLG ={
+        dots: true,
         arrows: true,
         slidesToShow: 1,
         infinite: true,
-        speed: 500,
-        slidesToShow: 1,
+        speed: 1000,
+        slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         autoplay: true,
-        speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear"
     }
 
     const settings ={
+        dots: true,
         arrows: true,
         slidesToShow: 1,
         infinite: true,
-        speed: 500,
-        slidesToShow: 1,
+        speed: 1000,
+        slidesToScroll: 1,
+        // slidesToShow: 3,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         autoplay: true,
-        speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear"
     }
